@@ -1,5 +1,6 @@
+ 
 const sumEvenArgs = (...args) => {
-  if(!args) return 0;
+  if(args.length === 0) return 0;
   
   const evenArgs = args.filter(function onlyEven(arg){
     return arg % 2 === 0;
@@ -7,11 +8,9 @@ const sumEvenArgs = (...args) => {
 
   const ans = evenArgs.reduce(function callack(sum, evenArg){
     return sum + evenArg;
-  }, 0,
+  }, 0
   );
 
   return ans;
 };
-
-//console.log(sumEvenArgs());
 export { sumEvenArgs };
