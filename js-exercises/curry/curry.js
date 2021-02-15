@@ -11,10 +11,6 @@ function curry(func){
   };
 }
 
-// const add = curry((a, b) => {
-//   return a + b;
-// });
-
 export {
   curry,
 };
